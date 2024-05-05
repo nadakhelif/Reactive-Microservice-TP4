@@ -6,9 +6,10 @@ import { OcrModule } from './ocr/ocr.module';
 import { CommercialModule } from './commercial/commercial.module';
 import { RiskManagementResolver } from './risk-management/risk-management.resolver';
 import { RiskManagementModule } from './risk-management/risk-management.module';
+import { BankModule } from './bank/bank.module';
 
 @Module({
-  imports: [OcrModule, CommercialModule, RiskManagementModule],
+  imports: [OcrModule, CommercialModule, RiskManagementModule, BankModule],
   controllers: [AppController],
   providers: [AppService, OcrService, RiskManagementResolver],
 })

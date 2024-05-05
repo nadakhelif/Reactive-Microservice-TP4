@@ -4,6 +4,6 @@ import { CommercialService } from './commercial.service';
 
 @Module({
   controllers: [CommercialController],
-  providers: [CommercialService]
+  providers: [CommercialService],
 })
 export class CommercialModule {}

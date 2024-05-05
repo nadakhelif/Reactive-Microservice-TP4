@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class ClientInfo {
+export class ClientInfoexport {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -13,6 +13,18 @@ export class ClientInfo {
 
   @Column()
   financialSituation: string;
+
+  @Column()
+  age: number;
+
+  @Column()
+  loanAmount: number;
+
+  @Column()
+  loanDuration: number;
+
+  @Column()
+  loanPurpose: string;
 
   @Column({ nullable: true })
   initialScoring: any;

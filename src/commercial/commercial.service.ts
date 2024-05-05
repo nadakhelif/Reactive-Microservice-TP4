@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ClientInfo } from './Entity/ClientInfo';
+import { ClientInfo } from './Entity/client-info.entity';
 
 @Injectable()
 export class CommercialService {
